@@ -1,0 +1,43 @@
+@use "top/vars" as *;
+@use "top/overlay";
+
+// CRT stripes
+body::before {
+    @include overlay.setup;
+    display: var(--crt-stripe, $stripe);
+    height: 100vh;
+    background-size: 100% var(--crt-size, $size);
+    background-image: linear-gradient(
+        var(--crt-stripe-light-color, $stripe-light-color) var(--crt-stripe-ratio, $stripe-ratio),
+        var(--crt-stripe-dark-color, $stripe-dark-color) calc(100% - var(--crt-stripe-ratio, $stripe-ratio))
+    );
+    z-index: var(--crt-height, $height);
+    animation: var(--crt-flicker, $flicker) var(--crt-flicker-speed, $flicker-speed) infinite alternate;
+}
+
+@keyframes flicker {
+    0% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: var(--crt-flicker-color, $flicker-color);
+    }
+}
+
+// CRT scanline
+body::after {
+    @include overlay.setup;
+    display: var(--crt-scanline, $scanline);
+    height: var(--crt-size, $size);
+    top: 0%;
+    background-image: linear-gradient(var(--crt-scanline-color, $scanline-color), transparent);
+    z-index: calc(var(--crt-height, $height) - 1);
+    animation: scanline var(--crt-scanline-speed, $scanline-speed) linear infinite var(--crt-scanline-direction, $scanline-direction);
+}
+
+@keyframes scanline {
+    0% {
+        top: 100%;
+    }
+}
