@@ -1,34 +1,21 @@
-/**
- * @name CRT
- * @author Saltssaumure
- * @authorLink https://github.com/Saltssaumure
- * @description A CRT monitor effect Discord theme.
- * @license MIT
- * @version 1.0
- * @invite uy8nKQVatp
- * @source https://github.com/MiniDiscordThemes/CRT
- * @donate https://ko-fi.com/saltssaumure
-*/
-
-@import url("https://minidiscordthemes.github.io/CRT/crt.min.css");
-
-/* See https://github.com/MiniDiscordThemes/CRT#customisation for customisation settings. */
+@import url("https://nerdwave-nick.github.io/CRT-Discord-Theme/crt.min.css");
 :root {
-    --crt-height:               9999;
-    --crt-size:                 4px;
+    --crt-height:               1002;
+    --crt-size:                 2.5px;
 
     --crt-stripe:               block;
-    --crt-stripe-light-color:   rgba(255, 255, 255, 0.1);
-    --crt-stripe-dark-color:    rgba(0, 0, 0, 0.1);
+    --crt-stripe-ratio:         70%;
+    --crt-stripe-light-color:   rgba(255, 255, 255, 0.03);
+    --crt-stripe-dark-color:    rgba(0, 0, 0, 0.85);
 
     /* ⛐ This effect is performance-intensive. */
     --crt-scanline:             block;
     --crt-scanline-speed:       3s;
-    --crt-scanline-color:       rgba(0, 0, 0, 0.5);
+    --crt-scanline-color:       rgba(0, 0, 0, 0.25);
     --crt-scanline-direction:   normal;
 
     /* ⚠ This is a fast flickering effect and may not be suitable for those with photosensitive epilepsy. */
-    --crt-flicker:              none;
+    --crt-flicker:              flicker;
     --crt-flicker-speed:        calc(1s/30);
-    --crt-flicker-color:        rgba(0, 0, 0, 0.1);
+    --crt-flicker-color:        rgba(0, 0, 0, 0.02);
 }
