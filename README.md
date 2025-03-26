@@ -63,6 +63,7 @@
 | Stacking position              | `--crt-height`                                        | Any number.                                         | `9999`                                           |
 | Size of scanlines              | `--crt-size`                                          | Any length, preferrably in `px`.                    | `4px`                                            |
 | Scanline stripes on/off        | `--crt-stripe`                                        | `block` (on) or `none` (off).                       | `block`                                          |
+| Scanline stripes ratio         | `--crt-stripe-ratio`                                  | Any CSS-recognized percentage                       | `70%`                                            |
 | Scanline stripes colour        | `--crt-stripe-light-color`, `--crt-stripe-dark-color` | Any CSS-recognised colour, low opacity recommended. | `rgba(255, 255, 255, 0.1)`, `rgba(0, 0, 0, 0.1)` |
 | &#9936; Moving scanline on/off | `--crt-scanline`                                      | `block` (on) or `none` (off).                       | `block`                                          |
 | Moving scanline speed          | `--crt-scanline-speed`                                | Any time, in `ms` or `s`.                           | `3s`                                             |
