@@ -1,12 +1,9 @@
 @import url("https://nerdwave-nick.github.io/CRT-Discord-Theme/crt.min.css");
 :root {
     --crt-height:               1002;
-    --crt-size:                 2.5px;
+    --crt-size:                 3px;
 
     --crt-stripe:               block;
-    --crt-stripe-ratio:         70%;
-    --crt-stripe-light-color:   rgba(255, 255, 255, 0.03);
-    --crt-stripe-dark-color:    rgba(0, 0, 0, 0.85);
 
     /* ⛐ This effect is performance-intensive. */
     --crt-scanline:             block;
@@ -16,6 +13,5 @@
 
     /* ⚠ This is a fast flickering effect and may not be suitable for those with photosensitive epilepsy. */
     --crt-flicker:              flicker;
-    --crt-flicker-speed:        calc(1s/30);
-    --crt-flicker-color:        rgba(0, 0, 0, 0.02);
+    --crt-flicker-speed:        0.1s;
 }
