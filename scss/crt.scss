@@ -8,21 +8,99 @@ body::before {
     height: 100vh;
     background-size: 100% var(--crt-size, $size);
     background-image: linear-gradient(
-        var(--crt-stripe-light-color, $stripe-light-color) var(--crt-stripe-ratio, $stripe-ratio),
-        var(--crt-stripe-dark-color, $stripe-dark-color) calc(100% - var(--crt-stripe-ratio, $stripe-ratio))
+		rgba(0, 0, 0, 0.8) 0%,
+		rgba(0, 0, 0, 0.2) 15%, 
+		rgba(255, 255, 255, 0.04) 50%, 
+		rgba(0, 0, 0, 0.2) 85%, 
+		rgba(0, 0, 0, 0.8) 100%
     );
     z-index: var(--crt-height, $height);
     animation: var(--crt-flicker, $flicker) var(--crt-flicker-speed, $flicker-speed) infinite alternate;
 }
 
 @keyframes flicker {
-    0% {
-        background-color: transparent;
-    }
-
-    100% {
-        background-color: var(--crt-flicker-color, $flicker-color);
-    }
+  0% {
+  background-color: rgba(0, 0, 0, 0.027861);
+  }
+  5% {
+	background-color: rgba(0, 0, 0, 0.08234)
+  /* opacity: 0.8234; */
+  }
+  10% {
+	background-color: rgba(0, 0, 0, 0.023604)
+  /* opacity: 0.23604; */
+  }
+  15% {
+	background-color: rgba(0, 0, 0, 0.010626)
+  /* opacity: 0.10626; */
+  }
+  20% {
+	background-color: rgba(0, 0, 0, 0.018128)
+  /* opacity: 0.18128; */
+  }
+  25% {
+	background-color: rgba(0, 0, 0, 0.063891)
+  /* opacity: 0.63891; */
+  }
+  30% {
+	background-color: rgba(0, 0, 0, 0.045583)
+  /* opacity: 0.45583; */
+  }
+  35% {
+	background-color: rgba(0, 0, 0, 0.037807)
+  /* opacity: 0.37807; */
+  }
+  40% {
+	background-color: rgba(0, 0, 0, 0.016559)
+  /* opacity: 0.16559; */
+  }
+  45% {
+	background-color: rgba(0, 0, 0, 0.034693)
+  /* opacity: 0.34693; */
+  }
+  50% {
+	background-color: rgba(0, 0, 0, 0.066019)
+  /* opacity: 0.66019; */
+  }
+  55% {
+	background-color: rgba(0, 0, 0, 0.008594)
+  /* opacity: 0.08594; */
+  }
+  60% {
+	background-color: rgba(0, 0, 0, 0.00313)
+  /* opacity: 0.0313; */
+  }
+  65% {
+	background-color: rgba(0, 0, 0, 0.041988)
+  /* opacity: 0.41988; */
+  }
+  70% {
+	background-color: rgba(0, 0, 0, 0.023455)
+  /* opacity: 0.23455; */
+  }
+  75% {
+	background-color: rgba(0, 0, 0, 0.027288)
+  /* opacity: 0.17288; */
+  }
+  80% {
+	background-color: rgba(0, 0, 0, 0.041428)
+  /* opacity: 0.41428; */
+  }
+  85% {
+	background-color: rgba(0, 0, 0, 0.030419)
+  /* opacity: 0.30419; */
+  }
+  90% {
+	background-color: rgba(0, 0, 0, 0.04003)
+  /* opacity: 0.4003; */
+  }
+  95% {
+	background-color: rgba(0, 0, 0, 0.026108)
+  /* opacity: 0.26108; */
+  }
+  100% {
+	background-color: rgba(0, 0, 0, 0.014387)
+  }
 }
 
 // CRT scanline
