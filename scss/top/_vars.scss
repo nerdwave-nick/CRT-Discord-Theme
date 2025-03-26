@@ -2,9 +2,6 @@ $height: 1002;
 $size: 2.5px;
 
 $stripe: block;
-$stripe-light-color: rgba(255, 255, 255, 0.03);
-$stripe-dark-color: rgba(0, 0, 0, 0.85);
-$stripe-ratio: 70%;
 
 $scanline: block;
 $scanline-speed: 3s;
@@ -12,5 +9,4 @@ $scanline-color: rgba(0, 0, 0, 0.25);
 $scanline-direction: normal;
 
 $flicker: none;
-$flicker-speed: calc(1s / 30);
-$flicker-color: rgba(0, 0, 0, 0.02);
+$flicker-speed: 0.1s;
