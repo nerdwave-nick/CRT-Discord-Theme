@@ -8,8 +8,8 @@ body::before {
     height: 100vh;
     background-size: 100% var(--crt-size, $size);
     background-image: linear-gradient(
-        var(--crt-stripe-light-color, $stripe-light-color) 50%,
-        var(--crt-stripe-dark-color, $stripe-dark-color) 50%
+        var(--crt-stripe-light-color, $stripe-light-color) var(--crt-stripe-ratio, $stripe-ratio),
+        var(--crt-stripe-dark-color, $stripe-dark-color) calc(100% - var(--crt-stripe-ratio, $stripe-ratio))
     );
     z-index: var(--crt-height, $height);
     animation: var(--crt-flicker, $flicker) var(--crt-flicker-speed, $flicker-speed) infinite alternate;
